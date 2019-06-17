@@ -72,11 +72,8 @@ contract StarNotary is ERC721 {
         address owner1 = ownerOf(_tokenId1);
         address owner2 = ownerOf(_tokenId2);
         require(owner1 == msg.sender||owner2 == msg.sender, "The sender needs to be the owner of the star.");
-        if (owner1 == msg.sender) {
-            _transferFrom(owner1, owner2, _tokenId1);
-        } else {
-            _transferFrom(owner2, owner1, _tokenId2);
-        }
+        _transferFrom(owner1, owner2, _tokenId1);
+        _transferFrom(owner2, owner1, _tokenId2);
     }
 
     // Implement Task 1 Transfer Stars
