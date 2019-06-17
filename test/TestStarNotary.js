@@ -123,6 +123,6 @@ it('lookUptokenIdToStarInfo test', async() => {
     let user1 = accounts[1];
     let starId = 10
     await instance.createStar('test star a', starId, {from: user1});
-    verifyStarName = lookUptokenIdToStarInfo(starId);
+    verifyStarName = await instance.lookUptokenIdToStarInfo(starId);
     assert.equal(verifyStarName, "test star a");
 });
