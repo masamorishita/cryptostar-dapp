@@ -83,7 +83,7 @@ it('can add the star name and star symbol properly', async() => {
     let starId = 6;
     await instance.createStar('test star', starId, {from: user1});
     assert.equal(await instance.name(), "Masa Token");
-    assert.equal(await instance.name(), "MAS");
+    assert.equal(await instance.symbol(), "MAS");
 });
 
 it('lets 2 users exchange stars', async() => {
@@ -119,4 +119,10 @@ it('lookUptokenIdToStarInfo test', async() => {
     // 1. create a Star with different tokenId
     // 2. Call your method lookUptokenIdToStarInfo
     // 3. Verify if you Star name is the same
+    let instance = await StarNotary.deployed();
+    let user1 = accounts[1];
+    let starId = 10
+    await instance.createStar('test star a', starId, {from: user1});
+    verifyStarName = lookUptokenIdToStarInfo(starId);
+    assert.equal(verifyStarName, "test star a");
 });
