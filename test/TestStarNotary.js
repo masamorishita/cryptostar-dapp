@@ -111,7 +111,7 @@ it('lets a user transfer a star', async() => {
     let user2 = accounts[2];
     let starId = 9
     await instance.createStar('test star z', starId, {from: user1});
-    await instance.transferStar(user2, starId);
+    await instance.transferStar(user2, starId, {from: user1});
     assert.equal(await instance.ownerOf(starId), user2);
 });
 
