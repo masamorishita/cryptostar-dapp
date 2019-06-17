@@ -1,5 +1,5 @@
 const HDWalletProvider = require('truffle-hdwallet-provider');
-const infuraKey = "<Infura PROJECT ID>";
+const infuraKey = "testtest";
 //
 // const fs = require('fs');
 const mnemonic = "<METAMASK SEED>";
