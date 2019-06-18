@@ -17,7 +17,7 @@ You will also need to have the latest version of Truffle (V5...) and the latest 
 This code is tested on `Truffle v5.0.21` and `OpenZeppelin v2.1.2`.
 
 ## Deploy the contract on Rinkeby Ethereum Testnet.
-When you deploy the contract on Rinkeby Ethereum Testnet, you need to modify `truffle-config.js` file by using your Metamask’s seed and Infura setup.
+When you deploy the contract on Rinkeby Ethereum Testnet, you need to add and modify `truffle-config.js` file on the root folder by using your Metamask’s seed and Infura setup.
 
 The code of `truffle-config.js` should look something as follows:
 ```
