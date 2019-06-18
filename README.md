@@ -1,5 +1,5 @@
 # Cryptostar Dapp on Ethereum
-A simple CryptoStar Dapp running Rinkeby Ethereum Testnet.
+A simple CryptoStar Dapp running on Rinkeby Ethereum Testnet.
 
 The name of the token is `Masa Token` and the symbol is `MAS`.
 The token address on the Rinkeby Network is `0x3a28638FEd7689bb71744dB4d067B2f7c7A660Ea`.
